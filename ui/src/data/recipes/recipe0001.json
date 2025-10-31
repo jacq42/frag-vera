@@ -1,0 +1,36 @@
+{
+  "id": "0001",
+  "name": "Brot ohne Hefe mit Malzbier",
+  "tags": [
+    "Brot", "Backen"
+  ],
+  "rating": 4.0,
+  "source": "Chefkoch.de",
+  "ingredients": [
+    {
+      "name": "Malzbier",
+      "quantity": "330",
+      "unit": "ml"
+    },
+    {
+      "name": "Dinkelmehl Typ 630",
+      "quantity": "400",
+      "unit": "g"
+    },
+    {
+      "name": "Backpulver",
+      "quantity": "1",
+      "unit": "Pck."
+    },
+    {
+      "name": "Salz",
+      "quantity": "1",
+      "unit": "Prise"
+    },
+    {
+      "name": "Zucker",
+      "quantity": "1",
+      "unit": "Prise"
+    }
+  ]
+}
