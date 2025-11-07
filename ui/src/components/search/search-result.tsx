@@ -17,7 +17,7 @@ export default function SearchResult() {
           recipes,
           fridgeItems
         );
-    console.log("found: " + results)
+        console.log("found: " + results)
         setMatches(results);
     };
 
