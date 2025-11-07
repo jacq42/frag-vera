@@ -1,0 +1,58 @@
+{
+  "ingredients": [
+    {
+      "id": "MALZBIER",
+      "name": "Malzbier",
+      "category": "Getränke",
+      "defaultUnit": "ml"
+    },
+    {
+      "id": "DINKELMEHL_T630",
+      "name": "Dinkelmehl Typ 630",
+      "category": "Backen",
+      "defaultUnit": "g"
+    },
+    {
+      "id": "BACKPULVER",
+      "name": "Backpulver",
+      "category": "Backen",
+      "defaultUnit": "Pck."
+    },
+    {
+      "id": "SALZ",
+      "name": "Salz",
+      "category": "DEFAULT",
+      "defaultUnit": "g"
+    },
+    {
+      "id": "ZUCKER",
+      "name": "Zucker",
+      "category": "Backen",
+      "defaultUnit": "g"
+    },
+    {
+      "id": "MILCH",
+      "name": "Milch",
+      "category": "Getränke",
+      "defaultUnit": "l"
+    },
+    {
+      "id": "BUTTER",
+      "name": "Butter",
+      "category": "Backen",
+      "defaultUnit": "g"
+    },
+    {
+      "id": "TK_GEMUESE",
+      "name": "Tiefkühlgemüse",
+      "category": "Gemüse",
+      "defaultUnit": "Pck."
+    },
+    {
+      "id": "FISCHSTÄBCHEN",
+      "name": "Fischstäbchen",
+      "category": "Fisch",
+      "defaultUnit": "Pck."
+    }
+  ]
+}

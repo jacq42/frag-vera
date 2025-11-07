@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import { recipes } from '@/data/recipes';
-import { Recipe } from '@/types/recipe';
+import { Recipe } from '@/types/recipes';
+import { getIngredientName } from '@/data/ingredients'
 
 export default function RecipeList() {
 
@@ -34,7 +35,7 @@ export default function RecipeList() {
                     <p>Zutaten:</p>
                     <ul className="pl-12 list-disc">
                     {selectedRecipe.ingredients.map((ingredient) => (
-                        <li>{ingredient.quantity} {ingredient.unit} <span className="font-bold">{ingredient.name}</span></li>
+                        <li>{ingredient.amount} {ingredient.unit} <span className="font-bold">{getIngredientName(ingredient.id)}</span></li>
                     ))}
                     </ul>
                 </div>

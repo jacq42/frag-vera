@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "TK_GEMUESE",
+      "amount": "3",
+      "unit": "Pck."
+    },
+    {
+      "id": "FISCHSTÄBCHEN",
+      "amount": "1",
+      "unit": "Pck."
+    }
+  ]
+}

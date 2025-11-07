@@ -8,28 +8,28 @@
   "source": "Chefkoch.de",
   "ingredients": [
     {
-      "name": "Malzbier",
-      "quantity": "330",
+      "id": "MALZBIER",
+      "amount": "330",
       "unit": "ml"
     },
     {
-      "name": "Dinkelmehl Typ 630",
-      "quantity": "400",
+      "id": "DINKEL_T630",
+      "amount": "400",
       "unit": "g"
     },
     {
-      "name": "Backpulver",
-      "quantity": "1",
+      "id": "BACKPULVER",
+      "amount": "1",
       "unit": "Pck."
     },
     {
-      "name": "Salz",
-      "quantity": "1",
+      "id": "SALZ",
+      "amount": "1",
       "unit": "Prise"
     },
     {
-      "name": "Zucker",
-      "quantity": "1",
+      "id": "ZUCKER",
+      "amount": "1",
       "unit": "Prise"
     }
   ]

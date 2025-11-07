@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "BUTTER",
+      "amount": "250",
+      "unit": "g"
+    },
+    {
+      "id": "MILCH",
+      "amount": "2",
+      "unit": "l"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ export default function RecipeTeaser() {
             <p className="pb-8">
                 Verwalte deine Lieblingsrezepte
             </p>
-            <Button href="/recipe" title="Kochbuch ansehen" />
+            <Button href="/recipes" title="Kochbuch ansehen" />
         </div>
     );
 };

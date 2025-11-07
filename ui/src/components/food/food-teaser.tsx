@@ -9,7 +9,8 @@ export default function FoodTeaser() {
             <p className="pb-8">
                 Wirf einen Blick in deinen Kühlschrank
             </p>
-            <Button href="/food" title="Kühlschrank ansehen" />
+            <Button href="/fridge" title="Kühlschrank öffnen" />
+            <Button href="/freezer" title="Tiefkühler öffnen" />
         </div>
     );
 };
