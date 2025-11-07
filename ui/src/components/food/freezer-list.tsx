@@ -10,7 +10,7 @@ export default function FreezerList() {
             <div className="pb-8">
                 <ul className="">
                     {freezerItems.map((item) => (
-                        <li>{getIngredientName(item.id)}: {item.amount} {item.unit}</li>
+                        <li key={item.id}>{getIngredientName(item.id)}: {item.amount} {item.unit}</li>
                     ))}
                 </ul>
             </div>

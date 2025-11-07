@@ -6,7 +6,7 @@ export class SimpleMatchingService {
     static matchRecipes(
         recipes: Recipe[],
         fridgeItems: FridgeItem[]
-    ): number[] {
-        return [1]
+    ): string[] {
+        return ["Rezept XXX"]
     }
 }

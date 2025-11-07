@@ -26,12 +26,13 @@ export default function SearchResult() {
             <button onClick={handleMatch}
                 className="bg-[#438951] hover:bg-white text-white hover:text-[#438951] font-bold py-2 px-4 rounded"
             >
-                Überasche mich!
+                Überrasche mich!
             </button>
             <div className="pt-8">
                 {matches.length > 0 && (
                     <div className="text-center text-gray-500 py-12">
-                        Guten Appetit!
+                        Guten Appetit!<br />
+                        Gefunden: {matches[0]}
                     </div>
                 )}
 
