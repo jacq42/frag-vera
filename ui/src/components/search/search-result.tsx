@@ -2,22 +2,29 @@
 import React, { useState } from 'react';
 import { recipes } from '@/data/recipes';
 import { fridgeItems } from '@/data/fridge';
+import { freezerItems } from '@/data/freezer';
 import { SimpleMatchingService } from '@/services/simpleMatchingService';
-import { Recipe } from '@/types/recipe';
-import { MatchResult } from '@/types/matching';
+import { Recipe, DetailedMatchResult } from '@/types';
 
 export default function SearchResult() {
 
-    const [matches, setMatches] = useState<Recipe[]>(recipes[0]);
+    const [matches, setMatches] = useState<DetailedMatchResult[]>([]);
 
     const handleMatch = () => {
         console.log("recipes: " + recipes)
         console.log("l = " + matches.length)
         const results = SimpleMatchingService.matchRecipes(
           recipes,
-          fridgeItems
+          fridgeItems,
+          freezerItems
         );
-        console.log("found: " + results)
+
+        console.log("Output Results:", results.length);
+        console.log("Erstes Result:", results[0]);
+        console.log("Erstes Result Recipe:", results[0]?.recipe);
+        console.log("Erstes Result Recipe Name:", results[0]?.recipe.title);
+        console.log("Recipe Properties:", results[0]?.recipe ? Object.keys(results[0].recipe) : 'none');
+        console.log("=== DEBUG END ===");
         setMatches(results);
     };
 
@@ -32,7 +39,52 @@ export default function SearchResult() {
                 {matches.length > 0 && (
                     <div className="text-center text-gray-500 py-12">
                         Guten Appetit!<br />
-                        Gefunden: {matches[0]}
+                        <div className="space-y-4">
+                        {matches.map((match, index) => (
+                            <div
+                                key={match.recipe.id}
+                                className="bg-white rounded-lg shadow-md p-6 border border-gray-200 text-left"
+                            >
+
+                                {/* Ranking Badge */}
+                                <div className="flex items-start justify-between mb-3">
+                                    <div>
+                                        <span className="inline-block bg-[#438951] text-white px-3 py-1 rounded-full text-sm font-bold mr-3">
+                                            #{index + 1}
+                                        </span>
+                                        <h3 className="inline text-xl font-bold text-gray-800">
+                                            {match.recipe.title}
+                                        </h3>
+                                    </div>
+
+                                    {/* Rating */}
+                                    <div className="flex items-center gap-1">
+                                        <span className="text-yellow-500 text-lg">⭐</span>
+                                        <span className="font-semibold text-gray-700">
+                                            {match.recipe.rating.toFixed(1)}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                {/* Zutaten-Info */}
+                                {match.availableIngredients && match.availableIngredients.length > 0 && (
+                                    <div className="text-sm text-gray-600 mb-3">
+                                        📋 {match.availableIngredients.length} Zutaten vorhanden
+                                    </div>
+                                )}
+                                {match.missingIngredients && match.missingIngredients.length > 0 && (
+                                    <div className="text-sm text-gray-600 mb-3">
+                                        📋 {match.missingIngredients.length} Zutaten fehlen
+                                    </div>
+                                )}
+
+                                {/* Source */}
+                                <div className="text-xs text-gray-500">
+                                    Quelle: {match.recipe.source}
+                                </div>
+                            </div>
+                        ))}
+                        </div>
                     </div>
                 )}
 
