@@ -91,6 +91,9 @@ export class SimpleMatchingService {
         freezerItems: FreezerItem[],
         pantryItems: PantryItem[],
     ): Set<string> {
+
+        // TODO wenn Wasser oder Sauerteig, dann nicht hinzufügen für den Vergleich (Kategorie oder location?)
+
         const ids = new Set<string>();
 
         fridgeItems.forEach(item => {

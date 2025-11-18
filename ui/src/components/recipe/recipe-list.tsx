@@ -22,14 +22,14 @@ export default function RecipeList() {
                     onChange={handleRecipeChange}>
                     <option key="0" value="0">-- Wähle ein Rezept --</option>
                     {recipes.map((recipe) => (
-                        <option key={recipe.id} value={recipe.id}>{recipe.name}</option>
+                        <option key={recipe.id} value={recipe.id}>{recipe.title}</option>
                     ))}
                 </select>
             </div>
             <div>
             {selectedRecipe ? (
                 <div className="">
-                    <h2 className="text-2xl font-bold mb-4">{selectedRecipe.name}</h2>
+                    <h2 className="text-2xl font-bold mb-4">{selectedRecipe.title}</h2>
                     <p>Quelle: {selectedRecipe.source}</p>
                     <p>Bewertung: {selectedRecipe.rating} / 5</p>
                     <p>Zutaten:</p>

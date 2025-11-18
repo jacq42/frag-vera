@@ -15,6 +15,20 @@
       "locationId": "PANTRY"
     },
     {
+      "id": "DINKEL_T1050",
+      "name": "Dinkelmehl Typ 1050",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ROGGEN_T1150",
+      "name": "Roggenmehl Typ 1150",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
       "id": "BACKPULVER",
       "name": "Backpulver",
       "category": "Backen",
@@ -62,6 +76,20 @@
       "category": "Fisch",
       "defaultUnit": "Pck.",
       "locationId": "FREEZER"
+    },
+    {
+      "id": "SAUERTEIG",
+      "name": "Sauerteig",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "UNKNOW"
+    },
+    {
+      "id": "WASSER",
+      "name": "Wasser",
+      "category": "",
+      "defaultUnit": "g",
+      "locationId": "UNKNOW"
     }
   ]
 }

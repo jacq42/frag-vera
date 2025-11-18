@@ -2,9 +2,11 @@
   "id": "0001",
   "title": "Brot ohne Hefe mit Malzbier",
   "tags": [
-    "Brot", "Backen"
+    "Brot",
+    "Backen",
+    "ohne Hefe"
   ],
-  "rating": 4.0,
+  "rating": 4.5,
   "source": "Chefkoch.de",
   "link": "https://www.chefkoch.de/rezepte/2526041396012314/Brot-ohne-Hefe-mit-Malzbier.html",
   "ingredients": [
@@ -32,11 +34,6 @@
       "id": "ZUCKER",
       "amount": "1",
       "unit": "Prise"
-    },
-    {
-      "id": "BUTTER",
-      "amount": "250",
-      "unit": "g"
     }
   ]
 }

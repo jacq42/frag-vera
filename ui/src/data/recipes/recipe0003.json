@@ -1,36 +1,39 @@
 {
   "id": "0003",
-  "title": "Brot ohne Hefe mit Malzbier 3",
+  "title": "Paderborner Landbrot von ketex",
   "tags": [
-    "Brot", "Backen"
+    "Brot",
+    "Sauerteig",
+    "Backen"
   ],
-  "rating": 4.0,
+  "rating": 4.8,
   "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/1198221225709122/Paderborner-Landbrot-von-ketex.html",
   "ingredients": [
     {
-      "id": "MALZBIER",
-      "amount": "330",
-      "unit": "ml"
-    },
-    {
-      "id": "DINKEL_T630",
-      "amount": "400",
+      "id": "SAUERTEIG",
+      "amount": "500",
       "unit": "g"
     },
     {
-      "id": "BACKPULVER",
-      "amount": "1",
-      "unit": "Pck."
+      "id": "ROGGEN_T1150",
+      "amount": "245",
+      "unit": "g"
+    },
+    {
+      "id": "DINKEL_T1050",
+      "amount": "120",
+      "unit": "g"
+    },
+    {
+      "id": "WASSER",
+      "amount": "255",
+      "unit": "g"
     },
     {
       "id": "SALZ",
-      "amount": "1",
-      "unit": "Prise"
-    },
-    {
-      "id": "ZUCKER",
-      "amount": "1",
-      "unit": "Prise"
+      "amount": "15",
+      "unit": "g"
     }
   ]
 }
