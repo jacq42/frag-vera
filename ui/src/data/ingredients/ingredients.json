@@ -4,10 +4,10 @@
       "id": "MALZBIER",
       "name": "Malzbier",
       "category": "Getränke",
-      "defaultUnit": "ml"
+      "defaultUnit": "Fl."
     },
     {
-      "id": "DINKELMEHL_T630",
+      "id": "DINKEL_T630",
       "name": "Dinkelmehl Typ 630",
       "category": "Backen",
       "defaultUnit": "g"

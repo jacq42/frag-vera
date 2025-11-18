@@ -1,5 +1,6 @@
 import Button from '@/components/button/button';
 import FridgeList from '@/components/food/fridge-list';
+import AddToFridge from '@/components/food/fridge-add';
 
 export default function Fridge() {
   return (
@@ -8,6 +9,7 @@ export default function Fridge() {
         <h1 className="text-4xl font-bold pb-16">Kühlschrank</h1>
         <Button href="/" title="Kühlschrank schließen" />
         <p className="pb-8">Verwalte deinen Kühlschrank</p>
+        <AddToFridge />
         <FridgeList />
       </main>
     </div>

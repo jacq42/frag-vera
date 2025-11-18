@@ -4,5 +4,6 @@ export interface Recipe {
   tags?: string[];
   rating: number;
   source: string;
+  link?: string;
   ingredients?: Ingredient[];
 }

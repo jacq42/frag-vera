@@ -1,0 +1,27 @@
+[
+  {
+    "id": "g",
+    "name": "Gramm",
+    "shortName": "g"
+  },
+  {
+    "id": "ml",
+    "name": "Milliliter",
+    "shortName": "ml"
+  },
+  {
+    "id": "Pck.",
+    "name": "Packung",
+    "shortName": "Pck."
+  },
+  {
+    "id": "l",
+    "name": "Liter",
+    "shortName": "l"
+  },
+  {
+    "id": "Fl.",
+    "name": "Flasche",
+    "shortName": "Fl."
+  }
+]

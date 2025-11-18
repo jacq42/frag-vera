@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { recipes } from '@/data/recipes';
 import { fridgeItems } from '@/data/fridge';
 import { freezerItems } from '@/data/freezer';
+import { pantryItems } from '@/data/pantry';
+import { getIngredientName } from '@/data/ingredients'
 import { SimpleMatchingService } from '@/services/simpleMatchingService';
 import { Recipe, DetailedMatchResult } from '@/types';
 
@@ -16,7 +18,8 @@ export default function SearchResult() {
         const results = SimpleMatchingService.matchRecipes(
           recipes,
           fridgeItems,
-          freezerItems
+          freezerItems,
+          pantryItems,
         );
 
         console.log("Output Results:", results.length);
@@ -26,6 +29,13 @@ export default function SearchResult() {
         console.log("Recipe Properties:", results[0]?.recipe ? Object.keys(results[0].recipe) : 'none');
         console.log("=== DEBUG END ===");
         setMatches(results);
+    };
+
+    const ingredientList = (ingredientIds: string[]): string => {
+        const list = ingredientIds.map((id) => {
+            return getIngredientName(id);
+        });
+        return list.join(", ");
     };
 
     return (
@@ -74,13 +84,14 @@ export default function SearchResult() {
                                 )}
                                 {match.missingIngredients && match.missingIngredients.length > 0 && (
                                     <div className="text-sm text-gray-600 mb-3">
-                                        📋 {match.missingIngredients.length} Zutaten fehlen
+                                        📋 {match.missingIngredients.length} Zutaten fehlen: {ingredientList(match.missingIngredients)}
                                     </div>
                                 )}
 
                                 {/* Source */}
                                 <div className="text-xs text-gray-500">
-                                    Quelle: {match.recipe.source}
+                                    {match.recipe.link && <span>Quelle: <a href={match.recipe.link} target="_blank">{match.recipe.source}</a></span>}
+                                    {!match.recipe.link && <span>Quelle: {match.recipe.source}</span>}
                                 </div>
                             </div>
                         ))}

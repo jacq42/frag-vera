@@ -7,4 +7,10 @@ export interface Ingredient {
     unit: string;
 }
 
+export interface Unit {
+    id: string;
+    name: string;
+    shortName: string;
+}
+
 export type IngredientId = string; // z.B. "TOMATOES", "CHEESE"

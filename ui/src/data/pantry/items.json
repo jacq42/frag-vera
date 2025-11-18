@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "ZUCKER",
+      "amount": "2",
+      "unit": "Pck."
+    },
+    {
+      "id": "SALZ",
+      "amount": "1",
+      "unit": "Pck."
+    }
+  ]
+}

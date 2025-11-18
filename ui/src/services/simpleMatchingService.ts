@@ -2,6 +2,7 @@ import {
     Recipe,
     FridgeItem,
     FreezerItem,
+    PantryItem,
     DetailedMatchResult
 } from '@/types';
 
@@ -18,13 +19,15 @@ export class SimpleMatchingService {
     static matchRecipes(
         recipes: Recipe[],
         fridgeItems: FridgeItem[],
-        freezerItems: FreezerItem[]
+        freezerItems: FreezerItem[],
+        pantryItems: PantryItem[],
     ): DetailedMatchResult[] {
         console.log("Try to find a match");
         // 1. Erstelle Set aller verfügbaren Zutaten-IDs
         const availableIngredientIds = this.getAvailableIngredientIds(
           fridgeItems,
-          freezerItems
+          freezerItems,
+          pantryItems,
         );
 
         // 2. Berechne Matches für alle Rezepte
@@ -85,7 +88,8 @@ export class SimpleMatchingService {
 
     private static getAvailableIngredientIds(
         fridgeItems: FridgeItem[],
-        freezerItems: FreezerItem[]
+        freezerItems: FreezerItem[],
+        pantryItems: PantryItem[],
     ): Set<string> {
         const ids = new Set<string>();
 
@@ -94,6 +98,10 @@ export class SimpleMatchingService {
         });
 
         freezerItems.forEach(item => {
+          ids.add(item.id);
+        });
+
+        pantryItems.forEach(item => {
           ids.add(item.id);
         });
 
