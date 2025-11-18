@@ -1,25 +1,28 @@
 "use client";
 import React, { useState } from 'react';
-import { pantryItems } from '@/data/pantry';
-import { getAllIngredients, getAllUnits } from '@/data/ingredients'
+import { getAllIngredientsByLocation, getAllUnits } from '@/data/ingredients'
 
 export default function PantryAdd() {
+
+    const locationId: LocationId = "PANTRY";
 
     return (
         <div className="pb-8">
             <div className="pb-8">
-                <select className="border border-gray-300 rounded p-2">
+                <select className="bg-gray-800 border border-gray-300 rounded p-2">
                     <option key="0" value="0">-- Was hast du im Vorrat? --</option>
-                    {getAllIngredients().map((item) => (
+                    {getAllIngredientsByLocation(locationId).map((item) => (
                         <option key={item.id}>{item.name}</option>
                     ))}
                 </select>
-                <select className="border border-gray-300 rounded p-2">
+                <select className="bg-gray-800 border border-gray-300 rounded p-2 ml-4">
                     <option key="0" value="0">-- Zuerst die Zutat wählen --</option>
                     {getAllUnits().map((unit) => (
                         <option key={unit.id}>{unit.name} ({unit.shortName})</option>
                     ))}
                 </select>
+                <input type="text"
+                    className="border border-gray-300 rounded p-2 ml-4"/>
             </div>
         </div>
     );

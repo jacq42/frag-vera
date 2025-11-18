@@ -1,5 +1,6 @@
 import Button from '@/components/button/button';
 import FreezerList from '@/components/food/freezer-list';
+import AddToFreezer from '@/components/food/freezer-add';
 
 export default function Freezer() {
   return (
@@ -8,6 +9,7 @@ export default function Freezer() {
         <h1 className="text-4xl font-bold pb-16">Tiefkühler</h1>
         <Button href="/" title="Tiefkühler schließen" />
         <p className="pb-8">Verwalte deinen Tiefkühler</p>
+        <AddToFreezer />
         <FreezerList />
       </main>
     </div>

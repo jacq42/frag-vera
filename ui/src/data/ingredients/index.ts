@@ -8,9 +8,16 @@ export const getAllIngredients = (): Ingredient[] => {
     return INGREDIENTS;
 };
 
+export const getAllIngredientsByLocation = (locationId: LocationId): Ingredient[] => {
+    console.log("get ingredient by location {}", locationId);
+    const filteredItems = INGREDIENTS.filter(item => item.locationId === locationId || item.locationId === undefined);
+    console.log("found {}", JSON.stringify(filteredItems));
+    return filteredItems;
+};
+
 export const getIngredientById = (id: IngredientId): Ingredient | undefined => {
     console.debug("get ingredient by id {}", id);
-    return INGREDIENTS.find(ing => ing.id === id);
+    return INGREDIENTS.find(item => item.id === id);
 };
 
 export const getIngredientName = (id: IngredientId): string => {

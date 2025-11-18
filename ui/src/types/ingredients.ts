@@ -5,6 +5,7 @@ export interface Ingredient {
     category: string;
     defaultUnit: string;
     unit: string;
+    locationId?: LocationId;
 }
 
 export interface Unit {
@@ -14,3 +15,4 @@ export interface Unit {
 }
 
 export type IngredientId = string; // z.B. "TOMATOES", "CHEESE"
+export type LocationId = string; // z.B. "PANTRY", "FREEZER", "FRIDGE"

@@ -4,55 +4,64 @@
       "id": "MALZBIER",
       "name": "Malzbier",
       "category": "Getränke",
-      "defaultUnit": "Fl."
+      "defaultUnit": "Fl.",
+      "locationId": "PANTRY"
     },
     {
       "id": "DINKEL_T630",
       "name": "Dinkelmehl Typ 630",
       "category": "Backen",
-      "defaultUnit": "g"
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
     },
     {
       "id": "BACKPULVER",
       "name": "Backpulver",
       "category": "Backen",
-      "defaultUnit": "Pck."
+      "defaultUnit": "Pck.",
+      "locationId": "PANTRY"
     },
     {
       "id": "SALZ",
       "name": "Salz",
       "category": "DEFAULT",
-      "defaultUnit": "g"
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
     },
     {
       "id": "ZUCKER",
       "name": "Zucker",
       "category": "Backen",
-      "defaultUnit": "g"
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
     },
     {
       "id": "MILCH",
       "name": "Milch",
       "category": "Getränke",
-      "defaultUnit": "l"
+      "defaultUnit": "l",
+      "locationId": "FRIDGE"
     },
     {
       "id": "BUTTER",
       "name": "Butter",
       "category": "Backen",
-      "defaultUnit": "g"
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
     },
     {
       "id": "TK_GEMUESE",
       "name": "Tiefkühlgemüse",
       "category": "Gemüse",
-      "defaultUnit": "Pck."
+      "defaultUnit": "Pck.",
+      "locationId": "FREEZER"
     },
     {
       "id": "FISCHSTÄBCHEN",
       "name": "Fischstäbchen",
       "category": "Fisch",
-      "defaultUnit": "Pck."
+      "defaultUnit": "Pck.",
+      "locationId": "FREEZER"
     }
   ]
 }

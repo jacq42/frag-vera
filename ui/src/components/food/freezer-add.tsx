@@ -2,23 +2,15 @@
 import React, { useState } from 'react';
 import { getAllIngredientsByLocation, getAllUnits } from '@/data/ingredients'
 
-export default function FridgeAdd() {
+export default function FreezerAdd() {
 
-    const locationId: LocationId = "FRIDGE";
-
-    const addItem = () => {
-        // TODO Hier weiter
-        const ingredient = getAllIngredientsByLocation(locationId).find((item) => item.id === "MILCH");
-        const amount = 2;
-        const unit = getAllUnits().find((unit) => unit.id === "Fl.");
-        console.log("Reingestellt: ", amount, unit.shortName, ingredient.name);
-    }
+    const locationId: LocationId = "FREEZER";
 
     return (
         <div className="pb-8">
             <div className="pb-8">
                 <select className="bg-gray-800 border border-gray-300 rounded p-2">
-                    <option key="0" value="0">-- Was hast du im Kühlschrank? --</option>
+                    <option key="0" value="0">-- Was hast du im Tiefkühler? --</option>
                     {getAllIngredientsByLocation(locationId).map((item) => (
                         <option key={item.id}>{item.name}</option>
                     ))}
@@ -31,11 +23,6 @@ export default function FridgeAdd() {
                 </select>
                 <input type="text"
                     className="border border-gray-300 rounded p-2 ml-4"/>
-                <button onClick={addItem}
-                    className="bg-[#438951] hover:bg-white text-white hover:text-[#438951] font-bold py-2 px-4 rounded ml-4"
-                >
-                    Reinstellen
-                </button>
             </div>
         </div>
     );
