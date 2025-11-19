@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "COUSCOUS",
+      "name": "Couscous",
+      "category": "Getreide",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "REIS",
+      "name": "Reis",
+      "category": "Getreide",
+      "defaultUnit": "Pck.",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "NUDELN",
+      "name": "Nudeln",
+      "category": "Getreide",
+      "defaultUnit": "Pck.",
+      "locationId": "PANTRY"
+    }
+  ]
+}

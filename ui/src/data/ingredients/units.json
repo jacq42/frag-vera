@@ -1,5 +1,15 @@
 [
   {
+    "id": "nB",
+    "name": "nach Bedarf",
+    "shortName": "etwas"
+  },
+  {
+    "id": "zA",
+    "name": "zum Anbraten",
+    "shortName": "etwas"
+  },
+  {
     "id": "g",
     "name": "Gramm",
     "shortName": "g"
@@ -23,5 +33,35 @@
     "id": "Fl.",
     "name": "Flasche",
     "shortName": "Fl."
+  },
+  {
+    "id": "Stk.",
+    "name": "Stück",
+    "shortName": "Stk."
+  },
+  {
+    "id": "Dose",
+    "name": "Dose",
+    "shortName": "Dose"
+  },
+  {
+    "id": "TL",
+    "name": "Teelöffel",
+    "shortName": "TL"
+  },
+  {
+    "id": "EL",
+    "name": "Esslöffel",
+    "shortName": "EL"
+  },
+  {
+    "id": "Zehe",
+    "name": "Zehe",
+    "shortName": "Zehe"
+  },
+  {
+    "id": "Prise",
+    "name": "Prise",
+    "shortName": "Prise"
   }
 ]

@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "id": "SALZ",
+      "name": "Salz",
+      "category": "Default",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ZUCKER",
+      "name": "Zucker",
+      "category": "Default",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "WASSER",
+      "name": "Wasser",
+      "category": "Default",
+      "defaultUnit": "g",
+      "locationId": "UNKNOW"
+    },
+    {
+      "id": "EI",
+      "name": "Ei",
+      "category": "Default",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "OEL",
+      "name": "Öl",
+      "category": "Default",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "BUTTER",
+      "name": "Butter",
+      "category": "Default",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "SAUERTEIG",
+      "name": "Sauerteig",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "UNKNOW"
+    },
+    {
+      "id": "SEMMELBROESEL",
+      "name": "Semmelbrösel",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    }
+  ]
+}

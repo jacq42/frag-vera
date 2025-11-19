@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "PFEFFER",
+      "name": "Pfeffer",
+      "category": "Gewürze",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "KURKUMA",
+      "name": "Kurkuma",
+      "category": "Gewürze",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "KREUZKREMMEL",
+      "name": "Kreuzkümmel",
+      "category": "Gewürze",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "PAPRIKA_EDLSUESS",
+      "name": "Paprikapulver edelsüß",
+      "category": "Gewürze",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
+    }
+  ]
+}

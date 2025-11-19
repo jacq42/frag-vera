@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "id": "FISCHSTÄBCHEN",
+      "name": "Fischstäbchen",
+      "category": "Fisch",
+      "defaultUnit": "Pck.",
+      "locationId": "FREEZER"
+    }
+  ]
+}

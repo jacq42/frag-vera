@@ -1,0 +1,79 @@
+{
+  "id": "0004",
+  "title": "Bulgur-Chili",
+  "tags": [
+    "Hauptspeise",
+    "Vegan",
+    "Eintopf"
+  ],
+  "rating": 4.5,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/2144781344616344/Bulgur-Chili.html",
+  "ingredients": [
+    {
+      "id": "FRUEHLINGSZWIEBEL",
+      "amount": "4",
+      "unit": "Stk."
+    },
+    {
+      "id": "TOMATEN_STUECKIG",
+      "amount": "2",
+      "unit": "Dose"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "amount": "400",
+      "unit": "ml"
+    },
+    {
+      "id": "CHILISCHOTE",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "KNOBLAUCH",
+      "amount": "1",
+      "unit": "Zehe"
+    },
+    {
+      "id": "BULGUR",
+      "amount": "150",
+      "unit": "g"
+    },
+    {
+      "id": "MAIS",
+      "amount": "1",
+      "unit": "Dose"
+    },
+    {
+      "id": "KIDNEYBOHNEN",
+      "amount": "1",
+      "unit": "Dose"
+    },
+    {
+      "id": "OREGANO_GETROCKNET",
+      "amount": "0.5",
+      "unit": "TL"
+    },
+    {
+      "id": "KREUZKUEMMELEPULVER",
+      "amount": "1",
+      "unit": "Prise"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "OEL",
+      "amount": "",
+      "unit": "zA"
+    }
+  ]
+}

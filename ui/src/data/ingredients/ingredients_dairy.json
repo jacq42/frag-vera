@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "id": "GERIEBENER_KAESE",
+      "name": "geriebener Käse",
+      "category": "Milchprodukte",
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
+    }
+  ]
+}

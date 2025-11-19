@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "TK_GEMUESE",
+      "name": "Tiefkühlgemüse",
+      "category": "Gemüse",
+      "defaultUnit": "Pck.",
+      "locationId": "FREEZER"
+    },
+    {
+      "id": "FRUEHLINGSZWIEBEL",
+      "name": "Frühlingszwiebel",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "TOMATEN_STUECKIG",
+      "name": "Tomaten stückig",
+      "category": "Gemüse",
+      "defaultUnit": "Dose",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "name": "Gemüsebrühe",
+      "category": "Gemüse",
+      "defaultUnit": "ml",
+      "locationId": "FRIDGE"
+    }
+  ]
+}

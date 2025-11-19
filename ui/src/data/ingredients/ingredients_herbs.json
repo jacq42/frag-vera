@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "PETERSILIE",
+      "name": "Petersilie",
+      "category": "Kräuter",
+      "defaultUnit": "nB",
+      "locationId": "GARDEN"
+    },
+    {
+      "id": "THYMIAN",
+      "name": "Thymian",
+      "category": "Kräuter",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
+    }
+  ]
+}

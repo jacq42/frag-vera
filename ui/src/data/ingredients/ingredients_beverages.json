@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "MALZBIER",
+      "name": "Malzbier",
+      "category": "Getränke",
+      "defaultUnit": "Fl.",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "MILCH",
+      "name": "Milch",
+      "category": "Getränke",
+      "defaultUnit": "l",
+      "locationId": "FRIDGE"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "DINKEL_T630",
+      "name": "Dinkelmehl Typ 630",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "DINKEL_T1050",
+      "name": "Dinkelmehl Typ 1050",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ROGGEN_T1150",
+      "name": "Roggenmehl Typ 1150",
+      "category": "Backen",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "BACKPULVER",
+      "name": "Backpulver",
+      "category": "Backen",
+      "defaultUnit": "Pck.",
+      "locationId": "PANTRY"
+    }
+  ]
+}
