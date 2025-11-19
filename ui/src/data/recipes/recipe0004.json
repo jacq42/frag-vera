@@ -51,12 +51,12 @@
       "unit": "Dose"
     },
     {
-      "id": "OREGANO_GETROCKNET",
+      "id": "OREGANO",
       "amount": "0.5",
       "unit": "TL"
     },
     {
-      "id": "KREUZKUEMMELEPULVER",
+      "id": "KREUZKUEMMEL",
       "amount": "1",
       "unit": "Prise"
     },

@@ -13,6 +13,13 @@
       "category": "Kräuter",
       "defaultUnit": "nB",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "OREGANO",
+      "name": "Oregano",
+      "category": "Kräuter",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
     }
   ]
 }

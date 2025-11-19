@@ -27,6 +27,34 @@
       "category": "Gemüse",
       "defaultUnit": "ml",
       "locationId": "FRIDGE"
+    },
+    {
+      "id": "KNOBLAUCH",
+      "name": "Knoblauch",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "CHILISCHOTE",
+      "name": "Chilischote",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "MAIS",
+      "name": "Mais",
+      "category": "Gemüse",
+      "defaultUnit": "Dose",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "KIDNEYBOHNEN",
+      "name": "Kidneybohnen",
+      "category": "Gemüse",
+      "defaultUnit": "Dose",
+      "locationId": "PANTRY"
     }
   ]
 }

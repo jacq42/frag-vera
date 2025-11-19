@@ -9,6 +9,46 @@
       "id": "SALZ",
       "amount": "1",
       "unit": "Pck."
+    },
+    {
+      "id": "COUSCOUS",
+      "amount": "500",
+      "unit": "g"
+    },
+    {
+      "id": "BULGUR",
+      "amount": "500",
+      "unit": "g"
+    },
+    {
+      "id": "TOMATEN_STUECKIG",
+      "amount": "10",
+      "unit": "Dose"
+    },
+    {
+      "id": "MAIS",
+      "amount": "3",
+      "unit": "Dose"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "KREUZKUEMMEL",
+      "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "PAPRIKA_EDELSUESS",
+      "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "OEL",
+      "amount": "2",
+      "unit": "Fl."
     }
   ]
 }

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "id": "BULGUR",
+      "name": "Bulgur",
+      "category": "Getreide",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
       "id": "COUSCOUS",
       "name": "Couscous",
       "category": "Getreide",

@@ -15,14 +15,14 @@
       "locationId": "PANTRY"
     },
     {
-      "id": "KREUZKREMMEL",
+      "id": "KREUZKUEMMEL",
       "name": "Kreuzkümmel",
       "category": "Gewürze",
       "defaultUnit": "nB",
       "locationId": "PANTRY"
     },
     {
-      "id": "PAPRIKA_EDLSUESS",
+      "id": "PAPRIKA_EDELSUESS",
       "name": "Paprikapulver edelsüß",
       "category": "Gewürze",
       "defaultUnit": "nB",

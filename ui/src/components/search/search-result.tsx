@@ -43,7 +43,7 @@ export default function SearchResult() {
             <button onClick={handleMatch}
                 className="bg-[#438951] hover:bg-white text-white hover:text-[#438951] font-bold py-2 px-4 rounded"
             >
-                Überrasche mich!
+                Was koche ich heute?
             </button>
             <div className="pt-8">
                 {matches.length > 0 && (
