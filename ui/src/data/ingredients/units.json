@@ -63,5 +63,10 @@
     "id": "Prise",
     "name": "Prise",
     "shortName": "Prise"
+  },
+  {
+    "id": "Glas",
+    "name": "Glas",
+    "shortName": "Glas"
   }
 ]

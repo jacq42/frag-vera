@@ -55,6 +55,27 @@
       "category": "Gemüse",
       "defaultUnit": "Dose",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "KARTOFFELN",
+      "name": "Kartoffeln",
+      "category": "Gemüse",
+      "defaultUnit": "kg",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ROTKOHL",
+      "name": "Rotkohl",
+      "category": "Gemüse",
+      "defaultUnit": "Glas",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ZWIEBEL",
+      "name": "Zwiebel",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "PANTRY"
     }
   ]
 }

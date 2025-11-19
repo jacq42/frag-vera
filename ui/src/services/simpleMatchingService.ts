@@ -17,12 +17,13 @@ interface RecipeMatch {
 export class SimpleMatchingService {
 
     static matchRecipes(
+        filterByTag: string,
         recipes: Recipe[],
         fridgeItems: FridgeItem[],
         freezerItems: FreezerItem[],
         pantryItems: PantryItem[],
     ): DetailedMatchResult[] {
-        console.log("Try to find a match");
+        console.log("Try to find a match by tag: " + filterByTag);
         // 1. Erstelle Set aller verfügbaren Zutaten-IDs
         const availableIngredientIds = this.getAvailableIngredientIds(
           fridgeItems,
@@ -30,9 +31,13 @@ export class SimpleMatchingService {
           pantryItems,
         );
 
+        // 2a. Filter by tag
+        const filteredRecipes: Recipe[] = recipes.filter(recipe => recipe.tags.includes(filterByTag))
+        console.log("filtered: " + JSON.stringify(filteredRecipes));
+
         // 2. Berechne Matches für alle Rezepte
-        const matches: RecipeMatch[] = recipes.map(recipe =>
-          this.calculateMatch(recipe, availableIngredientIds)
+        const matches: RecipeMatch[] = filteredRecipes.map(recipe =>
+            this.calculateMatch(recipe, availableIngredientIds)
         );
 
         // 3. Sortiere nach:

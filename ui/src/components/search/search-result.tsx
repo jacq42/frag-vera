@@ -12,14 +12,15 @@ export default function SearchResult() {
 
     const [matches, setMatches] = useState<DetailedMatchResult[]>([]);
 
-    const handleMatch = () => {
+    const handleMatch = (filterByTag: string) => {
         console.log("recipes: " + recipes)
         console.log("l = " + matches.length)
         const results = SimpleMatchingService.matchRecipes(
-          recipes,
-          fridgeItems,
-          freezerItems,
-          pantryItems,
+            filterByTag,
+            recipes,
+            fridgeItems,
+            freezerItems,
+            pantryItems,
         );
 
         console.log("Output Results:", results.length);
@@ -31,6 +32,14 @@ export default function SearchResult() {
         setMatches(results);
     };
 
+    const handleMatchCooking = () => {
+        handleMatch("Hauptspeise");
+    }
+
+    const handleMatchBaking = () => {
+        handleMatch("Backen");
+    }
+
     const ingredientList = (ingredientIds: string[]): string => {
         const list = ingredientIds.map((id) => {
             return getIngredientName(id);
@@ -40,10 +49,15 @@ export default function SearchResult() {
 
     return (
         <div className="flex-1 border-solid border-1 p-8 text-center">
-            <button onClick={handleMatch}
+            <button onClick={handleMatchCooking}
                 className="bg-[#438951] hover:bg-white text-white hover:text-[#438951] font-bold py-2 px-4 rounded"
             >
                 Was koche ich heute?
+            </button>
+            <button onClick={handleMatchBaking}
+                className="bg-[#438951] hover:bg-white text-white hover:text-[#438951] font-bold py-2 px-4 ml-4 rounded"
+            >
+                Was backe ich heute?
             </button>
             <div className="pt-8">
                 {matches.length > 0 && (

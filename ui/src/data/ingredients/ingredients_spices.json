@@ -27,6 +27,13 @@
       "category": "Gewürze",
       "defaultUnit": "nB",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "MUSKAT",
+      "name": "Muskat",
+      "category": "Gewürze",
+      "defaultUnit": "nB",
+      "locationId": "PANTRY"
     }
   ]
 }

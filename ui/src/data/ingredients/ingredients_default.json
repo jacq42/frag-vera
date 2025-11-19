@@ -45,15 +45,29 @@
     {
       "id": "SAUERTEIG",
       "name": "Sauerteig",
-      "category": "Backen",
+      "category": "Default",
       "defaultUnit": "g",
       "locationId": "UNKNOW"
     },
     {
       "id": "SEMMELBROESEL",
       "name": "Semmelbrösel",
-      "category": "Backen",
+      "category": "Default",
       "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "SENF",
+      "name": "Senf",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "KETCHUP",
+      "name": "Ketchup",
+      "category": "Default",
+      "defaultUnit": "EL",
       "locationId": "PANTRY"
     }
   ]

@@ -27,6 +27,20 @@
       "category": "Getreide",
       "defaultUnit": "Pck.",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "HAFERFLOCKEN",
+      "name": "Haferflocken zart",
+      "category": "Getreide",
+      "defaultUnit": "Pck.",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "HAFERFLOCKEN_KERNIG",
+      "name": "Haferflocken kernig",
+      "category": "Getreide",
+      "defaultUnit": "Pck.",
+      "locationId": "PANTRY"
     }
   ]
 }
