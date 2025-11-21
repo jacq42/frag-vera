@@ -1,4 +1,5 @@
 {
+  "lastModified": "2025-11-21T15:05:00.000Z",
   "items": [
     {
       "id": "BUTTER",
@@ -9,6 +10,61 @@
       "id": "MILCH",
       "amount": "2",
       "unit": "l"
+    },
+    {
+      "id": "EI",
+      "amount": "10",
+      "unit": "Stk."
+    },
+    {
+      "id": "SENF",
+      "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "PAPRIKA_GELB",
+      "amount": "2",
+      "unit": "Stk."
+    },
+    {
+      "id": "KOHLRABI",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "KAROTTE",
+      "amount": "10",
+      "unit": "Stk."
+    },
+    {
+      "id": "ZUCCHINI",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "BROKKOLI",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "FENCHEL",
+      "amount": "2",
+      "unit": "Stk."
+    },
+    {
+      "id": "GRUENKOHL",
+      "amount": "2",
+      "unit": "Pck."
+    },
+    {
+      "id": "GELBE_BEETE",
+      "amount": "3",
+      "unit": "Stk."
+    },
+    {
+      "id": "FRUEHLINGSZWIEBEL",
+      "amount": "1",
+      "unit": "Stk."
     }
   ]
 }

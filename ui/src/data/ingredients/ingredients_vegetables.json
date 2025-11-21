@@ -76,6 +76,62 @@
       "category": "Gemüse",
       "defaultUnit": "Stk.",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "PAPRIKA_GELB",
+      "name": "Gelbe Paprika",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "KOHLRABI",
+      "name": "Kohlrabi",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "KAROTTE",
+      "name": "Möhren",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "ZUCCHINI",
+      "name": "Zucchini",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "BROKKOLI",
+      "name": "Brokkoli",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "FENCHEL",
+      "name": "Fenchel",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "GRUENKOHL",
+      "name": "Grünkohl",
+      "category": "Gemüse",
+      "defaultUnit": "Pck.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "GELBE_BEETE",
+      "name": "Gelbe Beete",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
     }
   ]
 }

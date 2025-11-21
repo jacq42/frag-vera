@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from 'react';
-import { fridgeItems } from '@/data/fridge';
+import { fridgeItems, fridgeLastModified } from '@/data/fridge';
 import { getIngredientName } from '@/data/ingredients'
 
 export default function FridgeList() {
 
     return (
-        <div className="pb-8">
-            <div className="pb-8">
-                <ul className="">
+        <div className="">
+            <div className="">
+                <div className="">Aktualisiert: {fridgeLastModified}</div>
+                <ul className="mt-4">
                     {fridgeItems.map((item) => (
                         <li key={item.id}>{getIngredientName(item.id)}: {item.amount} {item.unit}</li>
                     ))}

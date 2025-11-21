@@ -1,5 +1,11 @@
 {
+  "lastModified": "2025-11-21T15:05:00.000Z",
   "items": [
+    {
+      "id": "WASSER",
+      "amount": "",
+      "unit": "ml"
+    },
     {
       "id": "ZUCKER",
       "amount": "2",
@@ -49,6 +55,16 @@
       "id": "OEL",
       "amount": "2",
       "unit": "Fl."
+    },
+    {
+      "id": "KNOBLAUCH",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "SEMMELBROESEL",
+      "amount": "1",
+      "unit": "Pck."
     }
   ]
 }

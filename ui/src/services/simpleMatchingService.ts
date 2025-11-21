@@ -41,18 +41,18 @@ export class SimpleMatchingService {
         );
 
         // 3. Sortiere nach:
-        //    - Primär: Anzahl verfügbarer Zutaten (mehr ist besser)
-        //    - Sekundär: Anzahl fehlender Zutaten (weniger ist besser)
+        //    - Primär: Anzahl fehlender Zutaten (weniger ist besser)
+        //    - Sekundär: Anzahl verfügbarer Zutaten (mehr ist besser)
         //    - Tertiär: Rating (höher ist besser)
         const sorted = matches.sort((a, b) => {
-          // Primär: Mehr verfügbare Zutaten = besser
-          if (a.availableCount !== b.availableCount) {
-            return b.availableCount - a.availableCount;
-          }
-
-          // Sekundär: Weniger fehlende Zutaten = besser
+          // Primär: Weniger fehlende Zutaten = besser
           if (a.missingCount !== b.missingCount) {
             return a.missingCount - b.missingCount;
+          }
+
+          // Sekundär: Mehr verfügbare Zutaten = besser
+          if (a.availableCount !== b.availableCount) {
+            return b.availableCount - a.availableCount;
           }
 
           // Tertiär: Höheres Rating = besser

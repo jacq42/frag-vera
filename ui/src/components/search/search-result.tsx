@@ -93,7 +93,7 @@ export default function SearchResult() {
                                 {/* Zutaten-Info */}
                                 {match.availableIngredients && match.availableIngredients.length > 0 && (
                                     <div className="text-sm text-gray-600 mb-3">
-                                        📋 {match.availableIngredients.length} Zutaten vorhanden
+                                        📋 {match.availableIngredients.length} Zutaten vorhanden: {ingredientList(match.availableIngredients)}
                                     </div>
                                 )}
                                 {match.missingIngredients && match.missingIngredients.length > 0 && (

@@ -59,6 +59,7 @@ export const getUnitShortName = (unitId: string): string => {
 export const getAllUnits = (): Unit[] => {
     let units = [];
     INGREDIENTS.map((item) => {
+        console.log("ingredient: " + JSON.stringify(item));
         if (!units.find(u => u.id === item.defaultUnit)) {
             units.push(convertToUnit(item.defaultUnit));
         }

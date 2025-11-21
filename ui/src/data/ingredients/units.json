@@ -15,6 +15,11 @@
     "shortName": "g"
   },
   {
+    "id": "kg",
+    "name": "Kilogramm",
+    "shortName": "kg"
+  },
+  {
     "id": "ml",
     "name": "Milliliter",
     "shortName": "ml"

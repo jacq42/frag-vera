@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from 'react';
-import { freezerItems } from '@/data/freezer';
+import { freezerItems, freezerLastModified } from '@/data/freezer';
 import { getIngredientName } from '@/data/ingredients'
 
 export default function FreezerList() {
 
     return (
-        <div className="pb-8">
-            <div className="pb-8">
-                <ul className="">
+        <div className="">
+            <div className="">
+                <div className="">Aktualisiert: {freezerLastModified}</div>
+                <ul className="mt-4">
                     {freezerItems.map((item) => (
                         <li key={item.id}>{getIngredientName(item.id)}: {item.amount} {item.unit}</li>
                     ))}
