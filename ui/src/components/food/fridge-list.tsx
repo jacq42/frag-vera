@@ -1,9 +1,16 @@
 "use client";
 import React, { useState } from 'react';
-import { fridgeItems, fridgeLastModified } from '@/data/fridge';
-import { getIngredientName } from '@/data/ingredients'
+import { FridgeService } from '@/services/fridgeService';
+import { IngredientService } from '@/services/ingredientService';
 
 export default function FridgeList() {
+
+    const fridgeItems = FridgeService.getAll();
+    const fridgeLastModified = FridgeService.getLastModified();
+
+    const getIngredientName = (id: IngredientId): string => {
+        return IngredientService.getIngredientName(id);
+    }
 
     return (
         <div className="">

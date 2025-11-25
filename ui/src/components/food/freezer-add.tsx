@@ -1,10 +1,18 @@
 "use client";
 import React, { useState } from 'react';
-import { getAllIngredientsByLocation, getAllUnits } from '@/data/ingredients'
+import { IngredientService } from '@/services/ingredientService';
 
 export default function FreezerAdd() {
 
     const locationId: LocationId = "FREEZER";
+
+    const getAllUnits = (): Unit[] => {
+        return IngredientService.getAllUnits();
+    }
+
+    const getAllIngredientsByLocation = (locationId: LocationId): Ingredient[] => {
+        return IngredientService.getAllIngredientsByLocation(locationId);
+    }
 
     return (
         <div className="pb-8">

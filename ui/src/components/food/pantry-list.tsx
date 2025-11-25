@@ -1,9 +1,16 @@
 "use client";
 import React, { useState } from 'react';
-import { pantryItems, pantryLastModified } from '@/data/pantry';
-import { getIngredientName } from '@/data/ingredients'
+import { PantryService } from '@/services/pantryService';
+import { IngredientService } from '@/services/ingredientService';
 
 export default function PantryList() {
+
+    const pantryItems = PantryService.getAll();
+    const pantryLastModified = PantryService.getLastModified();
+
+    const getIngredientName = (id: IngredientId): string => {
+        return IngredientService.getIngredientName(id);
+    }
 
     return (
         <div className="">

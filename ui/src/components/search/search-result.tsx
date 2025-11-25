@@ -1,14 +1,19 @@
 "use client";
 import React, { useState } from 'react';
-import { recipes } from '@/data/recipes';
-import { fridgeItems } from '@/data/fridge';
-import { freezerItems } from '@/data/freezer';
-import { pantryItems } from '@/data/pantry';
-import { getIngredientName } from '@/data/ingredients'
-import { SimpleMatchingService } from '@/services/simpleMatchingService';
 import { Recipe, DetailedMatchResult } from '@/types';
+import { SimpleMatchingService } from '@/services/simpleMatchingService';
+import { RecipeService } from '@/services/recipeService';
+import { FridgeService } from '@/services/fridgeService';
+import { FreezerService } from '@/services/freezerService';
+import { PantryService } from '@/services/pantryService';
+import { IngredientService } from '@/services/ingredientService';
 
 export default function SearchResult() {
+
+    const recipes = RecipeService.getAll();
+    const fridgeItems = FridgeService.getAll();
+    const freezerItems = FreezerService.getAll();
+    const pantryItems = PantryService.getAll();
 
     const [matches, setMatches] = useState<DetailedMatchResult[]>([]);
 
@@ -42,7 +47,7 @@ export default function SearchResult() {
 
     const ingredientList = (ingredientIds: string[]): string => {
         const list = ingredientIds.map((id) => {
-            return getIngredientName(id);
+            return IngredientService.getIngredientName(id);
         });
         return list.join(", ");
     };

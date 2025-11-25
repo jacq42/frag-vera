@@ -1,10 +1,20 @@
 "use client";
 import React, { useState } from 'react';
-import { recipes } from '@/data/recipes';
 import { Recipe } from '@/types/recipes';
-import { getIngredientName, getUnitShortName } from '@/data/ingredients'
+import { RecipeService } from '@/services/recipeService';
+import { IngredientService } from '@/services/ingredientService';
 
 export default function RecipeList() {
+
+    const recipes = RecipeService.getAll();
+
+    const getIngredientName = (id: IngredientId): string => {
+        return IngredientService.getIngredientName(id);
+    }
+
+    const getUnitShortName = (unitId: string): string => {
+        return IngredientService.getUnitShortName(unitId);
+    }
 
     const [selectedRecipeId, setSelectedRecipeId] = useState<string>('');
 

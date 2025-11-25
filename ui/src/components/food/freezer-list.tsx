@@ -1,9 +1,16 @@
 "use client";
 import React, { useState } from 'react';
-import { freezerItems, freezerLastModified } from '@/data/freezer';
-import { getIngredientName } from '@/data/ingredients'
+import { FreezerService } from '@/services/freezerService';
+import { IngredientService } from '@/services/ingredientService';
 
 export default function FreezerList() {
+
+    const freezerItems = FreezerService.getAll();
+    const freezerLastModified = FreezerService.getLastModified();
+
+    const getIngredientName = (id: IngredientId): string => {
+        return IngredientService.getIngredientName(id);
+    }
 
     return (
         <div className="">
