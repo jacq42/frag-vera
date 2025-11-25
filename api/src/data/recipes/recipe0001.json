@@ -1,0 +1,39 @@
+{
+  "id": "0001",
+  "title": "Brot ohne Hefe mit Malzbier",
+  "tags": [
+    "Brot",
+    "Backen",
+    "ohne Hefe"
+  ],
+  "rating": 4.5,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/2526041396012314/Brot-ohne-Hefe-mit-Malzbier.html",
+  "ingredients": [
+    {
+      "id": "MALZBIER",
+      "amount": "330",
+      "unit": "ml"
+    },
+    {
+      "id": "DINKEL_T630",
+      "amount": "400",
+      "unit": "g"
+    },
+    {
+      "id": "BACKPULVER",
+      "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "SALZ",
+      "amount": "1",
+      "unit": "Prise"
+    },
+    {
+      "id": "ZUCKER",
+      "amount": "1",
+      "unit": "Prise"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "0002",
+  "title": "Dinkel-Sauerteigbrot",
+  "tags": [
+    "Brot",
+    "Sauerteig",
+    "Backen"
+  ],
+  "rating": 4.8,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/1880311305813001/Dinkel-Sauerteigbrot.html",
+  "ingredients": [
+    {
+      "id": "DINKEL_T630",
+      "amount": "250",
+      "unit": "g"
+    },
+    {
+      "id": "DINKELSCHROT",
+      "amount": "100",
+      "unit": "g"
+    },
+    {
+      "id": "LEINSAMEN",
+      "amount": "50",
+      "unit": "g"
+    },
+    {
+      "id": "DINKELFLOCKEN",
+      "amount": "50",
+      "unit": "g"
+    },
+    {
+      "id": "SONNENBLUMENKERNE",
+      "amount": "50",
+      "unit": "g"
+    },
+    {
+      "id": "WASSER",
+      "amount": "390",
+      "unit": "ml"
+    },
+    {
+      "id": "SAUERTEIG",
+      "amount": "150",
+      "unit": "g"
+    },
+    {
+      "id": "SALZ",
+      "amount": "14",
+      "unit": "g"
+    },
+    {
+      "id": "RÜBENSIRUP",
+      "amount": "1",
+      "unit": "EL"
+    }
+  ]
+}

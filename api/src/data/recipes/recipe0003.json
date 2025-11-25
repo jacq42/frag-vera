@@ -1,0 +1,39 @@
+{
+  "id": "0003",
+  "title": "Paderborner Landbrot von ketex",
+  "tags": [
+    "Brot",
+    "Sauerteig",
+    "Backen"
+  ],
+  "rating": 4.8,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/1198221225709122/Paderborner-Landbrot-von-ketex.html",
+  "ingredients": [
+    {
+      "id": "SAUERTEIG",
+      "amount": "500",
+      "unit": "g"
+    },
+    {
+      "id": "ROGGEN_T1150",
+      "amount": "245",
+      "unit": "g"
+    },
+    {
+      "id": "DINKEL_T1050",
+      "amount": "120",
+      "unit": "g"
+    },
+    {
+      "id": "WASSER",
+      "amount": "255",
+      "unit": "g"
+    },
+    {
+      "id": "SALZ",
+      "amount": "15",
+      "unit": "g"
+    }
+  ]
+}

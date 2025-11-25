@@ -1,0 +1,79 @@
+{
+  "id": "0005",
+  "title": "Couscous-Bratlinge mit Käse",
+  "tags": [
+    "Hauptspeise",
+    "Vegetarisch",
+    "Bratlinge"
+  ],
+  "rating": 4.7,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/2220621355433498/Couscous-Bratlinge-mit-Kaese.html",
+  "ingredients": [
+    {
+      "id": "COUSCOUS",
+      "amount": "200",
+      "unit": "g"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "EI",
+      "amount": "2",
+      "unit": "Stk."
+    },
+    {
+      "id": "GERIEBENER_KAESE",
+      "amount": "150",
+      "unit": "g"
+    },
+    {
+      "id": "SEMMELBROESEL",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "PETERSILIE",
+      "amount": "1",
+      "unit": "TL"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "THYMIAN",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "KURKUMA",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "KREUZKUEMMEL",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "PAPRIKA_EDELSUESS",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "OEL",
+      "amount": "",
+      "unit": "zA"
+    }
+  ]
+}

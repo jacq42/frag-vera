@@ -1,0 +1,94 @@
+{
+  "id": "0006",
+  "title": "Haferbratlinge mit Apfelrotkohl und Kartoffelpüree",
+  "tags": [
+    "Hauptspeise",
+    "Vegetarisch",
+    "Bratlinge"
+  ],
+  "rating": 4.7,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/2499511392639215/Haferbratlinge-mit-Apfelrotkohl-und-Kartoffelpueree.html",
+  "ingredients": [
+    {
+      "id": "HAFERFLOCKEN_KERNIG",
+      "amount": "250",
+      "unit": "g"
+    },
+    {
+      "id": "SEMMELBROESEL",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "WASSER",
+      "amount": "500",
+      "unit": "ml"
+    },
+    {
+      "id": "ZWIEBEL",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "BUTTER",
+      "amount": "40",
+      "unit": "g"
+    },
+    {
+      "id": "EI",
+      "amount": "2",
+      "unit": "Stk."
+    },
+    {
+      "id": "SENF",
+      "amount": "2",
+      "unit": "TL"
+    },
+    {
+      "id": "SALZ",
+      "amount": "1",
+      "unit": "Prise"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "2",
+      "unit": "Prise"
+    },
+    {
+      "id": "PETERSILIE",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "OEL",
+      "amount": "4",
+      "unit": "EL"
+    },
+    {
+      "id": "ROTKOHL",
+      "amount": "1",
+      "unit": "Glas"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "KARTOFFELN",
+      "amount": "1000",
+      "unit": "g"
+    },
+    {
+      "id": "MILCH",
+      "amount": "500",
+      "unit": "ml"
+    },
+    {
+      "id": "MUSKAT",
+      "amount": "1",
+      "unit": "TL"
+    }
+  ]
+}
