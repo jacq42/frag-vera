@@ -1,0 +1,86 @@
+{
+  "id": "0013",
+  "title": "Kreolischer Reis",
+  "tags": [
+    "Reis",
+    "kreolisch",
+    "vegan",
+    "scharf"
+  ],
+  "rating": 4.38,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/994961204794058/Kreolischer-Reis.html",
+  "ingredients": [
+    {
+      "id": "KIDNEYBOHNEN",
+      "amount": "100",
+      "unit": "g"
+    },
+    {
+      "id": "TOMATEN",
+      "amount": "4",
+      "unit": "Stk."
+    },
+    {
+      "id": "ZWIEBEL",
+      "amount": "2",
+      "unit": "Stk."
+    },
+    {
+      "id": "KNOBLAUCH",
+      "amount": "2",
+      "unit": "Zehe"
+    },
+    {
+      "id": "OEL",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "REIS",
+      "amount": "200",
+      "unit": "g"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "amount": "500",
+      "unit": "ml"
+    },
+    {
+      "id": "PAPRIKA_GRUEN",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "PAPRIKA_ROT",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "LIMETTE",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "CHILISCHOTE",
+      "amount": "2",
+      "unit": "Stk."
+    },
+    {
+      "id": "KORIANDER",
+      "amount": "1",
+      "unit": "TL"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nach Geschmack"
+    }
+  ]
+}
+

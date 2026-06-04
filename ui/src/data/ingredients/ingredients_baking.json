@@ -27,6 +27,13 @@
       "category": "Backen",
       "defaultUnit": "Pck.",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "FLAMMKUCHENTEIG",
+      "name": "Flammkuchenteig",
+      "category": "Backen",
+      "defaultUnit": "Pck.",
+      "locationId": "FRIDGE"
     }
   ]
 }

@@ -36,6 +36,13 @@
       "locationId": "PANTRY"
     },
     {
+      "id": "OLIVENOEL",
+      "name": "Olivenöl",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
       "id": "BUTTER",
       "name": "Butter",
       "category": "Default",
@@ -66,6 +73,69 @@
     {
       "id": "KETCHUP",
       "name": "Ketchup",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "TOMATENMARK",
+      "name": "Tomatenmark",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "WEISSWEINESSIG",
+      "name": "Weißweinessig",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "HONIG",
+      "name": "Honig",
+      "category": "Default",
+      "defaultUnit": "TL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ROSINEN",
+      "name": "Rosinen",
+      "category": "Default",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "PINIENKERNE",
+      "name": "Pinienkerne",
+      "category": "Default",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "SONNENBLUMENKERNE",
+      "name": "Sonnenblumenkerne",
+      "category": "Default",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "HUEHNERBRUEHEPULVER",
+      "name": "Hühnerbrühepulver",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "AJVAR",
+      "name": "Ajvar",
+      "category": "Default",
+      "defaultUnit": "EL",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "ESSIG",
+      "name": "Essig",
       "category": "Default",
       "defaultUnit": "EL",
       "locationId": "PANTRY"

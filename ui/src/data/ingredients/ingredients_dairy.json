@@ -6,6 +6,34 @@
       "category": "Milchprodukte",
       "defaultUnit": "g",
       "locationId": "FRIDGE"
+    },
+    {
+      "id": "PARMESAN",
+      "name": "Parmesan",
+      "category": "Milchprodukte",
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "FETA",
+      "name": "Feta-Käse",
+      "category": "Milchprodukte",
+      "defaultUnit": "Pck.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "CREME_FRAICHE",
+      "name": "Crème fraîche",
+      "category": "Milchprodukte",
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "BERGKAESE",
+      "name": "Bergkäse",
+      "category": "Milchprodukte",
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
     }
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "id": "0007",
+  "title": "Zitronennudeln",
+  "tags": [
+    "Nudeln",
+    "Pasta",
+    "Zitrone",
+    "schnell"
+  ],
+  "rating": 4.44,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/1491201254217409/Zitronennudeln.html",
+  "ingredients": [
+    {
+      "id": "PENNE",
+      "amount": "500",
+      "unit": "g"
+    },
+    {
+      "id": "ZITRONE_BIO",
+      "amount": "1",
+      "unit": "Stück"
+    },
+    {
+      "id": "BUTTER",
+      "amount": "1",
+      "unit": "EL"
+    },
+    {
+      "id": "OLIVENOEL",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "THYMIAN_FRISCH",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "PARMESAN",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nach Geschmack"
+    }
+  ]
+}
+

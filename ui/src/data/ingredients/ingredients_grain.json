@@ -29,6 +29,20 @@
       "locationId": "PANTRY"
     },
     {
+      "id": "PENNE",
+      "name": "Penne",
+      "category": "Getreide",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "HIRSE",
+      "name": "Hirse",
+      "category": "Getreide",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
       "id": "HAFERFLOCKEN",
       "name": "Haferflocken zart",
       "category": "Getreide",

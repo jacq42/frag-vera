@@ -132,6 +132,83 @@
       "category": "Gemüse",
       "defaultUnit": "Stk.",
       "locationId": "FRIDGE"
+    },
+    {
+      "id": "PAPRIKA_ROT",
+      "name": "Paprika (rot)",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "PAPRIKA_GRUEN",
+      "name": "Paprika (grün)",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "TOMATEN",
+      "name": "Tomaten",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "TOMATEN_PASSIERT",
+      "name": "Tomaten (passiert)",
+      "category": "Gemüse",
+      "defaultUnit": "g",
+      "locationId": "PANTRY"
+    },
+    {
+      "id": "SALATGURKE",
+      "name": "Salatgurke",
+      "category": "Gemüse",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "ZITRONE_BIO",
+      "name": "Zitrone (Bio)",
+      "category": "Obst",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "LIMETTE",
+      "name": "Limette",
+      "category": "Obst",
+      "defaultUnit": "Stk.",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "ERBSEN_TK",
+      "name": "Erbsen (TK)",
+      "category": "Gemüse",
+      "defaultUnit": "g",
+      "locationId": "FREEZER"
+    },
+    {
+      "id": "CHAMPIGNONS",
+      "name": "Champignons",
+      "category": "Gemüse",
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "BABYSPINAT",
+      "name": "Baby-Spinat",
+      "category": "Gemüse",
+      "defaultUnit": "g",
+      "locationId": "FRIDGE"
+    },
+    {
+      "id": "RADIESCHEN",
+      "name": "Radieschen",
+      "category": "Gemüse",
+      "defaultUnit": "Bund",
+      "locationId": "FRIDGE"
     }
   ]
 }

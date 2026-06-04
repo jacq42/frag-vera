@@ -1,0 +1,86 @@
+{
+  "id": "0012",
+  "title": "Hirse-Gemüse-Eintopf",
+  "tags": [
+    "Eintopf",
+    "Hirse",
+    "vegetarisch",
+    "vegan"
+  ],
+  "rating": 4.65,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/3717981562843713/Hirse-Gemuese-Eintopf.html",
+  "ingredients": [
+    {
+      "id": "PAPRIKA_ROT",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "KARTOFFELN",
+      "amount": "400",
+      "unit": "g"
+    },
+    {
+      "id": "ZWIEBEL",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "OEL",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "PETERSILIE",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "KIDNEYBOHNEN",
+      "amount": "1",
+      "unit": "Dose"
+    },
+    {
+      "id": "MAIS",
+      "amount": "425",
+      "unit": "g"
+    },
+    {
+      "id": "TOMATEN_PASSIERT",
+      "amount": "500",
+      "unit": "g"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "amount": "700",
+      "unit": "ml"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "PAPRIKA_EDELSUESS",
+      "amount": "",
+      "unit": "nB"
+    },
+    {
+      "id": "KUEMMEL",
+      "amount": "1",
+      "unit": "TL"
+    },
+    {
+      "id": "HIRSE",
+      "amount": "150",
+      "unit": "g"
+    }
+  ]
+}
+

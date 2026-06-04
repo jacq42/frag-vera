@@ -15,11 +15,32 @@
       "locationId": "PANTRY"
     },
     {
+      "id": "THYMIAN_FRISCH",
+      "name": "Thymian (frisch)",
+      "category": "Kräuter",
+      "defaultUnit": "EL",
+      "locationId": "GARDEN"
+    },
+    {
       "id": "OREGANO",
       "name": "Oregano",
       "category": "Kräuter",
       "defaultUnit": "nB",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "MINZE",
+      "name": "Minze",
+      "category": "Kräuter",
+      "defaultUnit": "nB",
+      "locationId": "GARDEN"
+    },
+    {
+      "id": "KORIANDER",
+      "name": "Koriander (grün)",
+      "category": "Kräuter",
+      "defaultUnit": "nB",
+      "locationId": "GARDEN"
     }
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "id": "0011",
+  "title": "Kartoffel-Radieschen-Salat",
+  "tags": [
+    "Salat",
+    "Kartoffeln",
+    "vegetarisch",
+    "Sommer"
+  ],
+  "rating": 4.53,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/1749671284365156/Kartoffel-Radieschen-Salat.html",
+  "ingredients": [
+    {
+      "id": "KARTOFFELN",
+      "amount": "500",
+      "unit": "g"
+    },
+    {
+      "id": "ZWIEBEL",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "OEL",
+      "amount": "3",
+      "unit": "EL"
+    },
+    {
+      "id": "ESSIG",
+      "amount": "3",
+      "unit": "EL"
+    },
+    {
+      "id": "GEMUESEBRUEHE",
+      "amount": "200",
+      "unit": "ml"
+    },
+    {
+      "id": "SENF",
+      "amount": "1",
+      "unit": "EL"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "RADIESCHEN",
+      "amount": "1",
+      "unit": "Bund"
+    },
+    {
+      "id": "PETERSILIE",
+      "amount": "",
+      "unit": "nB"
+    }
+  ]
+}
+

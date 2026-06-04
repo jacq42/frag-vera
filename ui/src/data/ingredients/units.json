@@ -73,5 +73,10 @@
     "id": "Glas",
     "name": "Glas",
     "shortName": "Glas"
+  },
+  {
+    "id": "Bund",
+    "name": "Bund",
+    "shortName": "Bd."
   }
 ]

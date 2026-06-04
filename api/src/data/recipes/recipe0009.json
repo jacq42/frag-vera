@@ -1,0 +1,86 @@
+{
+  "id": "0009",
+  "title": "Djuvec-Reis",
+  "tags": [
+    "Reis",
+    "Beilage",
+    "Balkan",
+    "schnell"
+  ],
+  "rating": 4.67,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/455651138638742/Djuvec-Reis.html",
+  "ingredients": [
+    {
+      "id": "ZWIEBEL",
+      "amount": "0.5",
+      "unit": "Stk."
+    },
+    {
+      "id": "KNOBLAUCH",
+      "amount": "1",
+      "unit": "Zehe"
+    },
+    {
+      "id": "BUTTER",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "REIS",
+      "amount": "1.5",
+      "unit": "Tasse"
+    },
+    {
+      "id": "TOMATEN_STUECKIG",
+      "amount": "1",
+      "unit": "Dose"
+    },
+    {
+      "id": "HUEHNERBRUEHEPULVER",
+      "amount": "2",
+      "unit": "EL"
+    },
+    {
+      "id": "AJVAR",
+      "amount": "3",
+      "unit": "EL"
+    },
+    {
+      "id": "WASSER",
+      "amount": "2",
+      "unit": "Tasse"
+    },
+    {
+      "id": "SALZ",
+      "amount": "1",
+      "unit": "TL"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "2",
+      "unit": "Prise"
+    },
+    {
+      "id": "PAPRIKA_EDELSUESS",
+      "amount": "1",
+      "unit": "TL"
+    },
+    {
+      "id": "ERBSEN_TK",
+      "amount": "200",
+      "unit": "g"
+    },
+    {
+      "id": "PAPRIKA_ROT",
+      "amount": "0.5",
+      "unit": "Stk."
+    },
+    {
+      "id": "PETERSILIE",
+      "amount": "1",
+      "unit": "EL"
+    }
+  ]
+}
+

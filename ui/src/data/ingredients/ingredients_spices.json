@@ -34,6 +34,13 @@
       "category": "Gewürze",
       "defaultUnit": "nB",
       "locationId": "PANTRY"
+    },
+    {
+      "id": "KUEMMEL",
+      "name": "Kümmel",
+      "category": "Gewürze",
+      "defaultUnit": "TL",
+      "locationId": "PANTRY"
     }
   ]
 }

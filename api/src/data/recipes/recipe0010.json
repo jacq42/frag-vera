@@ -1,0 +1,61 @@
+{
+  "id": "0010",
+  "title": "Flammkuchen mit würzigem Bergkäse, Babyspinat und Champignons",
+  "tags": [
+    "Flammkuchen",
+    "vegetarisch",
+    "Pilze",
+    "Spinat"
+  ],
+  "rating": 4.79,
+  "source": "Chefkoch.de",
+  "link": "https://www.chefkoch.de/rezepte/4079781638349914/Flammkuchen-mit-wuerzigem-Bergkaese-Babyspinat-und-Champignons.html",
+  "ingredients": [
+    {
+      "id": "FLAMMKUCHENTEIG",
+      "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "CHAMPIGNONS",
+      "amount": "6",
+      "unit": "Stk."
+    },
+    {
+      "id": "FRUEHLINGSZWIEBEL",
+      "amount": "1",
+      "unit": "Stk."
+    },
+    {
+      "id": "BABYSPINAT",
+      "amount": "50",
+      "unit": "g"
+    },
+    {
+      "id": "CREME_FRAICHE",
+      "amount": "150",
+      "unit": "g"
+    },
+    {
+      "id": "BERGKAESE",
+      "amount": "100",
+      "unit": "g"
+    },
+    {
+      "id": "OLIVENOEL",
+      "amount": "1",
+      "unit": "EL"
+    },
+    {
+      "id": "SALZ",
+      "amount": "",
+      "unit": "nach Geschmack"
+    },
+    {
+      "id": "PFEFFER",
+      "amount": "",
+      "unit": "nach Geschmack"
+    }
+  ]
+}
+
