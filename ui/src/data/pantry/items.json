@@ -1,5 +1,5 @@
 {
-  "lastModified": "2026-06-04T13:35:05.089Z",
+  "lastModified": "2026-06-04T14:10:47.796Z",
   "items": [
     {
       "id": "WASSER",
@@ -74,6 +74,26 @@
     {
       "id": "PENNE",
       "amount": "2",
+      "unit": "Pck."
+    },
+    {
+      "id": "REIS",
+      "amount": "5",
+      "unit": "kg"
+    },
+    {
+      "id": "ZWIEBEL",
+      "amount": "5",
+      "unit": "Stk."
+    },
+    {
+      "id": "HIRSE",
+      "amount": "1",
+      "unit": "kg"
+    },
+    {
+      "id": "HUEHNERBRUEHEPULVER",
+      "amount": "1",
       "unit": "Pck."
     }
   ]

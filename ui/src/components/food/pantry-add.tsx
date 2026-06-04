@@ -67,7 +67,7 @@ export default function PantryAdd({ onAdded }: PantryAddProps) {
                     onChange={(e) => setSelectedIngredientId(e.target.value)}
                 >
                     <option value="">-- Was hast du im Vorrat? --</option>
-                    {getAllIngredientsByLocation(locationId).map((item) => (
+                    {[...getAllIngredientsByLocation(locationId)].sort((a, b) => a.name.localeCompare(b.name, 'de', { sensitivity: 'base' })).map((item) => (
                         <option key={item.id} value={item.id}>{item.name}</option>
                     ))}
                 </select>
