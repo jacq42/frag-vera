@@ -1,5 +1,5 @@
-import express, { Application } from "express";
-import cors, { CorsOptions } from "cors";
+import express, {Application} from "express";
+import cors, {CorsOptions} from "cors";
 import Routes from "./routes";
 
 export default class Server {
@@ -10,7 +10,7 @@ export default class Server {
 
   private config(app: Application): void {
     const corsOptions: CorsOptions = {
-      origin: "http://localhost:8081"
+      origin: ["http://localhost:8081", "http://localhost:3000"]
     };
 
     app.use(cors(corsOptions));

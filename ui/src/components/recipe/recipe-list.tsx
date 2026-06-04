@@ -1,12 +1,16 @@
 "use client";
-import React, { useState } from 'react';
-import { Recipe } from '@/types/recipes';
-import { RecipeService } from '@/services/recipeService';
-import { IngredientService } from '@/services/ingredientService';
+import React, {useEffect, useState} from 'react';
+import {Recipe} from '@/types/recipes';
+import {RecipeService} from '@/services/recipeService';
+import {IngredientService} from '@/services/ingredientService';
 
 export default function RecipeList() {
 
-    const recipes = RecipeService.getAll();
+    const [recipes, setRecipes] = useState<Recipe[]>([]);
+
+    useEffect(() => {
+        RecipeService.getAll().then(setRecipes);
+    }, []);
 
     const getIngredientName = (id: IngredientId): string => {
         return IngredientService.getIngredientName(id);

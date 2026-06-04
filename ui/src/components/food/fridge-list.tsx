@@ -1,12 +1,25 @@
 "use client";
-import React, { useState } from 'react';
-import { FridgeService } from '@/services/fridgeService';
-import { IngredientService } from '@/services/ingredientService';
+import React, {useEffect, useState} from 'react';
+import {FridgeItem} from '@/types';
+import {IngredientService} from '@/services/ingredientService';
 
-export default function FridgeList() {
+interface FridgeListProps {
+    refreshKey?: number;
+}
 
-    const fridgeItems = FridgeService.getAll();
-    const fridgeLastModified = FridgeService.getLastModified();
+export default function FridgeList({ refreshKey }: FridgeListProps) {
+
+    const [fridgeItems, setFridgeItems] = useState<FridgeItem[]>([]);
+    const [lastModified, setLastModified] = useState<string>("");
+
+    useEffect(() => {
+        fetch('/api/fridge')
+            .then((res) => res.json())
+            .then((data) => {
+                setFridgeItems(data.items ?? []);
+                setLastModified(data.lastModified ?? "");
+            });
+    }, [refreshKey]);
 
     const getIngredientName = (id: IngredientId): string => {
         return IngredientService.getIngredientName(id);
@@ -15,7 +28,7 @@ export default function FridgeList() {
     return (
         <div className="">
             <div className="">
-                <div className="">Aktualisiert: {fridgeLastModified}</div>
+                <div className="">Aktualisiert: {lastModified}</div>
                 <ul className="mt-4">
                     {fridgeItems.map((item) => (
                         <li key={item.id}>{getIngredientName(item.id)}: {item.amount} {item.unit}</li>

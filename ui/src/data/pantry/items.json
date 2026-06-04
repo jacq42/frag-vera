@@ -1,5 +1,5 @@
 {
-  "lastModified": "2025-11-21T15:05:00.000Z",
+  "lastModified": "2026-06-04T13:35:05.089Z",
   "items": [
     {
       "id": "WASSER",
@@ -64,6 +64,16 @@
     {
       "id": "SEMMELBROESEL",
       "amount": "1",
+      "unit": "Pck."
+    },
+    {
+      "id": "NUDELN",
+      "amount": "10",
+      "unit": "Pck."
+    },
+    {
+      "id": "PENNE",
+      "amount": "2",
       "unit": "Pck."
     }
   ]

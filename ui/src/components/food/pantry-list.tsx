@@ -1,12 +1,25 @@
 "use client";
-import React, { useState } from 'react';
-import { PantryService } from '@/services/pantryService';
-import { IngredientService } from '@/services/ingredientService';
+import React, {useEffect, useState} from 'react';
+import {PantryItem} from '@/types';
+import {IngredientService} from '@/services/ingredientService';
 
-export default function PantryList() {
+interface PantryListProps {
+    refreshKey?: number;
+}
 
-    const pantryItems = PantryService.getAll();
-    const pantryLastModified = PantryService.getLastModified();
+export default function PantryList({ refreshKey }: PantryListProps) {
+
+    const [pantryItems, setPantryItems] = useState<PantryItem[]>([]);
+    const [lastModified, setLastModified] = useState<string>("");
+
+    useEffect(() => {
+        fetch('/api/pantry')
+            .then((res) => res.json())
+            .then((data) => {
+                setPantryItems(data.items ?? []);
+                setLastModified(data.lastModified ?? "");
+            });
+    }, [refreshKey]);
 
     const getIngredientName = (id: IngredientId): string => {
         return IngredientService.getIngredientName(id);
@@ -15,7 +28,7 @@ export default function PantryList() {
     return (
         <div className="">
             <div className="">
-                <div className="">Aktualisiert: {pantryLastModified}</div>
+                <div className="">Aktualisiert: {lastModified}</div>
                 <ul className="mt-4">
                     {pantryItems.map((item) => (
                         <li key={item.id}>{getIngredientName(item.id)}: {item.amount} {item.unit}</li>

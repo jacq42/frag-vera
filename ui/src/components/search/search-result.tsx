@@ -1,25 +1,33 @@
 "use client";
-import React, { useState } from 'react';
-import { Recipe, DetailedMatchResult } from '@/types';
-import { SimpleMatchingService } from '@/services/simpleMatchingService';
-import { RecipeService } from '@/services/recipeService';
-import { FridgeService } from '@/services/fridgeService';
-import { FreezerService } from '@/services/freezerService';
-import { PantryService } from '@/services/pantryService';
-import { IngredientService } from '@/services/ingredientService';
+import React, {useEffect, useState} from 'react';
+import {DetailedMatchResult, FreezerItem, FridgeItem, PantryItem, Recipe} from '@/types';
+import {SimpleMatchingService} from '@/services/simpleMatchingService';
+import {RecipeService} from '@/services/recipeService';
+import {IngredientService} from '@/services/ingredientService';
 
 export default function SearchResult() {
 
-    const recipes = RecipeService.getAll();
-    const fridgeItems = FridgeService.getAll();
-    const freezerItems = FreezerService.getAll();
-    const pantryItems = PantryService.getAll();
-
+    const [recipes, setRecipes] = useState<Recipe[]>([]);
+    const [fridgeItems, setFridgeItems] = useState<FridgeItem[]>([]);
+    const [freezerItems, setFreezerItems] = useState<FreezerItem[]>([]);
+    const [pantryItems, setPantryItems] = useState<PantryItem[]>([]);
     const [matches, setMatches] = useState<DetailedMatchResult[]>([]);
 
+    useEffect(() => {
+        Promise.all([
+            RecipeService.getAll(),
+            fetch('/api/fridge').then(r => r.json()),
+            fetch('/api/freezer').then(r => r.json()),
+            fetch('/api/pantry').then(r => r.json()),
+        ]).then(([recipeData, fridge, freezer, pantry]) => {
+            setRecipes(recipeData);
+            setFridgeItems(fridge.items ?? []);
+            setFreezerItems(freezer.items ?? []);
+            setPantryItems(pantry.items ?? []);
+        });
+    }, []);
+
     const handleMatch = (filterByTag: string) => {
-        console.log("recipes: " + recipes)
-        console.log("l = " + matches.length)
         const results = SimpleMatchingService.matchRecipes(
             filterByTag,
             recipes,
@@ -27,13 +35,6 @@ export default function SearchResult() {
             freezerItems,
             pantryItems,
         );
-
-        console.log("Output Results:", results.length);
-        console.log("Erstes Result:", results[0]);
-        console.log("Erstes Result Recipe:", results[0]?.recipe);
-        console.log("Erstes Result Recipe Name:", results[0]?.recipe.title);
-        console.log("Recipe Properties:", results[0]?.recipe ? Object.keys(results[0].recipe) : 'none');
-        console.log("=== DEBUG END ===");
         setMatches(results);
     };
 

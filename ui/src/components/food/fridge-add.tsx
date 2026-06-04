@@ -1,10 +1,19 @@
 "use client";
-import React, { useState } from 'react';
-import { IngredientService } from '@/services/ingredientService';
+import React, {useState} from 'react';
+import {IngredientService} from '@/services/ingredientService';
 
-export default function FridgeAdd() {
+interface FridgeAddProps {
+    onAdded?: () => void;
+}
+
+export default function FridgeAdd({ onAdded }: FridgeAddProps) {
 
     const locationId: LocationId = "FRIDGE";
+
+    const [selectedIngredientId, setSelectedIngredientId] = useState<string>("");
+    const [selectedUnitId, setSelectedUnitId] = useState<string>("");
+    const [amount, setAmount] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
 
     const getAllUnits = (): Unit[] => {
         return IngredientService.getAllUnits();
@@ -14,37 +23,78 @@ export default function FridgeAdd() {
         return IngredientService.getAllIngredientsByLocation(locationId);
     }
 
-    const addItem = () => {
-        // TODO Hier weiter
-        const ingredient = getAllIngredientsByLocation(locationId).find((item) => item.id === "MILCH");
-        const amount = 2;
-        const unit = getAllUnits().find((unit) => unit.id === "Fl.");
-        console.log("Reingestellt: ", amount, unit.shortName, ingredient.name);
+    const addItem = async () => {
+        if (!selectedIngredientId || !selectedUnitId || !amount) {
+            setMessage("Bitte Zutat, Einheit und Menge angeben.");
+            return;
+        }
+
+        const ingredient = getAllIngredientsByLocation(locationId).find((item) => item.id === selectedIngredientId);
+        const unit = getAllUnits().find((u) => u.id === selectedUnitId);
+
+        if (!ingredient || !unit) {
+            setMessage("Ungültige Zutat oder Einheit.");
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/fridge', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: ingredient.id, amount, unit: unit.shortName }),
+            });
+
+            if (response.ok) {
+                setMessage(`✓ ${amount} ${unit.shortName} ${ingredient.name} reingestellt.`);
+                setSelectedIngredientId("");
+                setSelectedUnitId("");
+                setAmount("");
+                onAdded?.();
+            } else {
+                setMessage("Fehler beim Speichern.");
+            }
+        } catch (err) {
+            setMessage("Fehler beim Speichern.");
+        }
     }
 
     return (
         <div className="pb-8">
             <div className="pb-8">
-                <select className="bg-gray-800 border border-gray-300 rounded p-2">
-                    <option key="0" value="0">-- Was hast du im Kühlschrank? --</option>
+                <select
+                    className="bg-gray-800 border border-gray-300 rounded p-2"
+                    value={selectedIngredientId}
+                    onChange={(e) => setSelectedIngredientId(e.target.value)}
+                >
+                    <option value="">-- Was hast du im Kühlschrank? --</option>
                     {getAllIngredientsByLocation(locationId).map((item) => (
-                        <option key={item.id}>{item.name}</option>
+                        <option key={item.id} value={item.id}>{item.name}</option>
                     ))}
                 </select>
-                <select className="bg-gray-800 border border-gray-300 rounded p-2 ml-4">
-                    <option key="0" value="0">-- Zuerst die Zutat wählen --</option>
+                <select
+                    className="bg-gray-800 border border-gray-300 rounded p-2 ml-4"
+                    value={selectedUnitId}
+                    onChange={(e) => setSelectedUnitId(e.target.value)}
+                >
+                    <option value="">-- Einheit wählen --</option>
                     {getAllUnits().map((unit) => (
-                        <option key={unit.id}>{unit.name} ({unit.shortName})</option>
+                        <option key={unit.id} value={unit.id}>{unit.name} ({unit.shortName})</option>
                     ))}
                 </select>
-                <input type="text"
-                    className="border border-gray-300 rounded p-2 ml-4"/>
+                <input
+                    type="number"
+                    placeholder="Menge"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
+                    className="border border-gray-300 rounded p-2 ml-4 w-24"
+                />
                 <button onClick={addItem}
                     className="bg-[#438951] hover:bg-white text-white hover:text-[#438951] font-bold py-2 px-4 rounded ml-4"
                 >
                     Reinstellen
                 </button>
             </div>
+            {message && <p className="text-sm mt-2">{message}</p>}
         </div>
     );
 };
